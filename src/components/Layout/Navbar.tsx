@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Lightning from "../Assets/Lightning";
-import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -19,31 +18,31 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link
                 href="/"
-                className="rounded-md px-3 py-2 text-sm font-medium text-sky-50 hover:text-[#04acf4]"
+                className="rounded-md px-3 py-2 text-sm font-bold text-sky-50 hover:text-[#04acf4]"
               >
                 HOME
               </Link>
               <Link
                 href="/about"
-                className="rounded-md px-3 py-2 text-sm font-medium text-sky-50 hover:text-[#04acf4]"
+                className="rounded-md px-3 py-2 text-sm font-bold text-sky-50 hover:text-[#04acf4]"
               >
                 ABOUT
               </Link>
               <Link
                 href="/experience"
-                className="rounded-md px-3 py-2 text-sm font-medium text-sky-50 hover:text-[#04acf4]"
+                className="rounded-md px-3 py-2 text-sm font-bold text-sky-50 hover:text-[#04acf4]"
               >
                 EXPERIENCE
               </Link>
               <Link
                 href="/projects"
-                className="rounded-md px-3 py-2 text-sm font-medium text-sky-50 hover:text-[#04acf4]"
+                className="rounded-md px-3 py-2 text-sm font-bold text-sky-50 hover:text-[#04acf4]"
               >
                 PROJECTS
               </Link>
               <Link
                 href="/contact"
-                className="rounded-md px-3 py-2 text-sm font-medium text-sky-50 hover:text-[#04acf4]"
+                className="rounded-md px-3 py-2 text-sm font-bold text-sky-50 hover:text-[#04acf4]"
               >
                 CONTACT
               </Link>
