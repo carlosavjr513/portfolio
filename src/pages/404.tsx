@@ -1,5 +1,5 @@
 import { type NextPage } from "next";
-import Layout from "~/components/Layout";
+import Layout from "~/components/Layout/Layout";
 import Image from 'next/image'
 
 const PageNotFound: NextPage = () => {
@@ -13,7 +13,7 @@ const PageNotFound: NextPage = () => {
         Don&#39;t worry we have a team of Experts working on it
       </h2>    
       <Image 
-        src='/patrick.png'
+        src='/img/patrick.webp'
         alt='experts working on 404'
         width={512}
         height={512}
