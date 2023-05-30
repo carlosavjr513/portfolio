@@ -5,7 +5,7 @@ import Layout from "~/components/Layout/Layout";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <h1 className="text-5x1  font-extrabold tracking-tight text-slate-100 sm:text-[5rem]">
+      <h1 className="text-7xl font-extrabold tracking-tight text-slate-100">
         Hello there, I&#39;m Carlos.
       </h1>
       {/* <div className="grid grid-cols-11 gap-4 sm:grid-cols-1 md:gap-8">      

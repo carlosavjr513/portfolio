@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-br from-[#0080ff] to-[#1f3088];
+  @apply bg-gradient-to-br from-[#0040aa] to-[#001033];
 }
