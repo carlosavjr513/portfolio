@@ -51,7 +51,7 @@ const MobileNavBar = ({
               <Link
                 key={name}
                 href={path}
-                className="my-3 hover:bg-sky-50 hover:text-[#04acf4]"
+                className="py-3 hover:bg-sky-50 hover:text-[#04acf4]"
                 onClick={() => setOpen(!open)}
               >
                 {name}
@@ -113,17 +113,17 @@ const Navbar = () => {
           onClick={() => setOpen(!open)}
         >
           <span
-            className={`h-1 w-full transform rounded-lg bg-sky-50 dark:bg-sky-50 transition duration-300 ease-in-out ${
+            className={`h-1 w-full transform rounded-lg bg-sky-50 transition duration-300 ease-in-out ${
               open ? "translate-y-3.5 rotate-45" : ""
             }`}
           />
           <span
-            className={`h-1 w-full rounded-lg bg-sky-50 dark:bg-sky-50 transition-all duration-300 ease-in-out ${
+            className={`h-1 w-full rounded-lg bg-sky-50 transition-all duration-300 ease-in-out ${
               open ? "max-w-0" : "w-full"
             }`}
           />
           <span
-            className={`h-1 w-full transform rounded-lg bg-sky-50 dark:bg-sky-50 transition duration-300 ease-in-out ${
+            className={`h-1 w-full transform rounded-lg bg-sky-50 transition duration-300 ease-in-out ${
               open ? "-translate-y-3.5 -rotate-45" : ""
             }`}
           />
