@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gradient-to-br from-[#0040aa] to-[#001033];
+body {  
+  @apply bg-gradient-to-br from-maelstrom-200 to-shaman-400;
 }

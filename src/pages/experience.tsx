@@ -1,13 +1,52 @@
 import { type NextPage } from "next";
+import Card from "~/components/Card";
 import Layout from "~/components/Layout/Layout";
+import { jobs } from "~/utils/jobs";
 
 const About: NextPage = () => {
   return (
     <Layout title={"Experience"}>
-      <h1 className="text-7xl font-extrabold tracking-tight text-slate-100">
+      <h1 className="text-7xl font-extrabold tracking-tight text-slate-50">
         Experience
-      </h1>
-      <p className="text-slate-100 text-justify text-[2rem]">
+      </h1>      
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center"> */}
+        <Card>
+          <div className="divide-y divide-maelstrom-300">
+            <div className="m-5 divide-y-2 divide-maelstrom-300 p-2 text-justify text-black">
+              <p className="mb-2 font-semibold text-slate-900">
+                {jobs[0]?.company.toUpperCase()}
+              </p>
+              <p className="pt-2">{jobs[0]?.activities}</p>
+            </div>
+            <div className="m-5 p-2 text-justify text-slate-950">
+              <p className="font-semibold">Skills Used</p>
+              <p>{jobs[0]?.skillsUsed}</p>
+            </div>
+          </div>
+        </Card>
+        <Card>
+          <div className="divide-y divide-maelstrom-300">
+            <div className="m-5 divide-y-2 divide-maelstrom-300 p-2 text-justify text-black">
+              <p className="mb-2 font-semibold text-slate-900">
+                {jobs[1]?.company.toUpperCase()}
+              </p>
+              <p className="pt-2">{jobs[0]?.activities}</p>
+            </div>
+            <div className="m-5 p-2 text-justify text-slate-950">
+              <p className="font-semibold">Skills Used</p>
+              <p>{jobs[1]?.skillsUsed}</p>
+            </div>
+          </div>
+        </Card>
+      {/* </div> */}
+    </Layout>
+  );
+};
+
+export default About;
+
+{
+  /* <p className="text-slate-100 text-justify text-[2rem]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nibh
         non ex dapibus posuere. Duis in dui massa. Phasellus ac tortor sapien.
         Duis nec vestibulum justo. Morbi elementum arcu sapien, sed semper diam
@@ -43,9 +82,5 @@ const About: NextPage = () => {
         amet, scelerisque dolor. Phasellus nec augue eget enim placerat posuere.
         In ultrices aliquet ligula vel pharetra. Fusce semper finibus elementum.
         Donec dictum eget augue sed molestie.
-      </p>
-    </Layout>
-  );
-};
-
-export default About;
+      </p>  */
+}

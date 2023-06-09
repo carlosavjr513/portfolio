@@ -17,7 +17,7 @@ const PageNotFound: NextPage = () => {
       </h2>
       <Image
         src="/img/patrick.webp"
-        alt="experts working on 404"
+        alt="404"
         width={512}
         height={512}
       />
