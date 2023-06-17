@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import Lightning from "../Assets/Lightning";
 
 const navItems = [
@@ -30,16 +30,45 @@ const MobileNavBar = ({
   open: boolean;
   setOpen: Dispatch<SetStateAction<boolean>>;
 }) => {
-  // useEffect(() => {
-  //   if (open) document.body.style.overflow = "hidden";
-  //   else document.body.style.overflow = "auto";
-  // }, [open]);
+  useEffect(() => {
+    if (open) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+  }, [open]);
 
   return (
     <div>
       <div>
         <div
-          className={`absolute left-0 top-0 z-30 h-[200vh] w-3/5 transform bg-shaman-700 ${
+          className="relative z-50 ml-4 mt-4 flex h-8 w-8 flex-col items-center justify-between md:hidden"
+          onClick={() => setOpen(!open)}
+          aria-valuetext={open ? "sidebar open" : "sidebar closed"}
+        >
+          <span
+            className={`h-1 w-full transform rounded-lg bg-sky-50 transition duration-300 ease-in-out ${
+              open ? "translate-y-3.5 rotate-45" : ""
+            }`}
+          />
+          <span
+            className={`h-1 w-full rounded-lg bg-sky-50 transition-all duration-300 ease-in-out ${
+              open ? "max-w-0" : "w-full"
+            }`}
+          />
+          <span
+            className={`h-1 w-full transform rounded-lg bg-sky-50 transition duration-300 ease-in-out ${
+              open ? "-translate-y-3.5 -rotate-45" : ""
+            }`}
+          />
+        </div>
+        <div
+          className={classNames(
+            `fixed inset-y-0 left-0 z-20 bg-black bg-opacity-50 ${
+              open ? " w-full" : "max-w-0"
+            }`
+          )}
+          onClick={() => setOpen(!open)}
+        />
+        <div
+          className={`absolute left-0 top-0 z-30 h-[110vh] w-3/5 transform bg-shaman-700 ${
             open ? "-translate-x-0 " : "-translate-x-full "
           } transition-transform duration-300 ease-in-out`}
         >
@@ -60,35 +89,6 @@ const MobileNavBar = ({
             )}
           </div>
         </div>
-        <div
-          className={classNames(
-            `fixed inset-y-0 left-0 z-20 bg-black opacity-50 ${
-              open ? " w-full" : "max-w-0"
-            }`
-          )}
-          onClick={() => setOpen(!open)}
-        />
-      </div>
-      <div
-        className="relative z-50 ml-4 mt-4 flex h-8 w-8 flex-col items-center justify-between md:hidden"
-        onClick={() => setOpen(!open)}
-        aria-valuetext={open ? "sidebar open" : "sidebar closed"}
-      >
-        <span
-          className={`h-1 w-full transform rounded-lg bg-sky-50 transition duration-300 ease-in-out ${
-            open ? "translate-y-3.5 rotate-45" : ""
-          }`}
-        />
-        <span
-          className={`h-1 w-full rounded-lg bg-sky-50 transition-all duration-300 ease-in-out ${
-            open ? "max-w-0" : "w-full"
-          }`}
-        />
-        <span
-          className={`h-1 w-full transform rounded-lg bg-sky-50 transition duration-300 ease-in-out ${
-            open ? "-translate-y-3.5 -rotate-45" : ""
-          }`}
-        />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import type { FC, ReactNode } from "react";
+import type { ReactNode } from "react";
 import Navbar from "./Navbar";
 
 interface LayoutProps {
@@ -7,7 +7,7 @@ interface LayoutProps {
   title?: string;
 }
 
-const Layout: FC<LayoutProps> = ({ children, title }) => {
+const Layout = ({ children, title }: LayoutProps) => {
   return (
     <div className="flex min-h-screen flex-col">
       <Head>

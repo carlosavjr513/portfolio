@@ -1,28 +1,28 @@
 import { type NextPage } from "next";
-import Image from "next/image";
+import Card from "~/components/Card";
 import Layout from "~/components/Layout/Layout";
+import { projects } from "~/utils/projects";
 
-const PageNotFound: NextPage = () => {
-  const stringText = "//TODO";
+const Projects: NextPage = () => {
   return (
-    <Layout title="Not Found">
-      <h1 className="text-7xl font-extrabold tracking-tight text-white">
-        Hang in there,
-        <p>
-          its on my <span className="text-green-600">{stringText}</span> list
-        </p>
+    <Layout title="Projects">
+      <h1 className="items-center text-7xl font-extrabold tracking-tight text-slate-50">
+        Projects
       </h1>
-      <h2 className="text-3xl font-normal text-slate-100 ">
-        Work in Progress...
-      </h2>
-      <Image
-        src="/img/patrick.webp"
-        alt="404"
-        width={512}
-        height={512}
-      />
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        {projects.map((project, index) => {
+          return (
+            <div key={index}>
+              <Card>
+                <div>teste</div>
+                {project.name}
+              </Card>
+            </div>
+          );
+        })}
+      </div>
     </Layout>
   );
 };
 
-export default PageNotFound;
+export default Projects;

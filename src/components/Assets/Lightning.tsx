@@ -1,5 +1,9 @@
-//prettier-ignore
-const Lightning = ({ size, className }: { size: number, className: string }) => {
+interface LightningIcon {
+  size: number;
+  className: string;
+}
+
+const Lightning = ({ size, className }: LightningIcon) => {
   return (
     <div className={className}>
       <svg

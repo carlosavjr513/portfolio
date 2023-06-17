@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {  
-  @apply bg-gradient-to-br from-maelstrom-200 to-shaman-400;
+  @apply bg-gradient-to-br from-maelstrom-400 via-maelstrom-200 to-shaman-400;
 }

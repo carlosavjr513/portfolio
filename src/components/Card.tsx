@@ -1,13 +1,15 @@
-import type { FC, ReactNode } from "react";
+import { type ReactNode } from "react";
 
 interface CardProps {
   children: ReactNode;
 }
 
-const Card: FC<CardProps> = ({ children }) => {
+const Card = ({ children }: CardProps) => {
   return (
-    <div className="w-11/12 rounded-md bg-white/80 p-2 shadow-lg shadow-black transition-shadow duration-300 ease-in-out hover:shadow-xl hover:shadow-black">
-      {children}
+    <div className="px-2 py-5">
+      <div className="rounded-md bg-white/80 shadow-md shadow-black transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black">
+        {children}
+      </div>
     </div>
   );
 };
