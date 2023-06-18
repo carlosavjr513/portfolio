@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 import Lightning from "../Assets/Lightning";
 
 const navItems = [
@@ -30,16 +30,12 @@ const MobileNavBar = ({
   open: boolean;
   setOpen: Dispatch<SetStateAction<boolean>>;
 }) => {
-  useEffect(() => {
-    if (open) document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "auto";
-  }, [open]);
-
   return (
-    <div>
+    <aside>
       <div>
         <div
-          className="relative z-50 ml-4 mt-4 flex h-8 w-8 flex-col items-center justify-between md:hidden"
+          //prettier-ignore
+          className={classNames(`${ open ? "fixed" : "relative" } z-50 ml-4 mt-4 flex h-8 w-8 flex-col items-center justify-between md:hidden`)}
           onClick={() => setOpen(!open)}
           aria-valuetext={open ? "sidebar open" : "sidebar closed"}
         >
@@ -49,8 +45,8 @@ const MobileNavBar = ({
             }`}
           />
           <span
-            className={`h-1 w-full rounded-lg bg-sky-50 transition-all duration-300 ease-in-out ${
-              open ? "max-w-0" : "w-full"
+            className={`h-1 w-full rounded-lg bg-sky-50 transition-all duration-700 ease-in-out ${
+              open ? "rotate-[405deg]" : ""
             }`}
           />
           <span
@@ -68,7 +64,7 @@ const MobileNavBar = ({
           onClick={() => setOpen(!open)}
         />
         <div
-          className={`absolute left-0 top-0 z-30 h-[110vh] w-3/5 transform bg-shaman-700 ${
+          className={`fixed left-0 top-0 z-30 h-full w-3/5 transform bg-shaman-700 ${
             open ? "-translate-x-0 " : "-translate-x-full "
           } transition-transform duration-300 ease-in-out`}
         >
@@ -90,7 +86,7 @@ const MobileNavBar = ({
           </div>
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 
