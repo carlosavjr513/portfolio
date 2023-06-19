@@ -1,23 +1,27 @@
 export const jobs = [
   {
     id: 1,
-    company: "Company 1",
-    companyColor: "bg-clip-text bg-gradient-to-tr from-[#Ef426f] to-[#f2678b]",
-    activities: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nibh non ex dapibus posuere.Duis in dui massa. Phasellus ac tortor sapien. Duis nec vestibulum justo. Morbi elementum arcu sapien, sed semper diam rhoncus vitae. Maecenas nec mauris tempor urna congue finibus vel eget tellus. Phasellus quis dolor ante. Sed quam orci, blandit eu rutrum at, vestibulum ac augue. Nam hendrerit faucibus est, at dictum nunc tincidunt lacinia. Cras ultrices congue placerat. Curabitur vulputate vulputate leo, accumsan luctus dui. Etiam consequat luctus tempus. Duis condimentum auctor aliquet.",
-    skillsUsed: "React.js, TypeScript, Node.js, C#, SQL, NHibernate, JavaScript, Git, Azure, Scrum, HTML, CSS",
+    role: "Front-end Developer",
+    company: "SALVA (SantosLab)",
+    workTime: "September 2022 - April 2023",
+    activities: [
+      "Delivered and maintain new features, components and fixed issues.",
+      "Delivered and maintained the front-end for a marketplace project.",
+    ],
+    skillsUsed:
+      "React.js, TypeScript, Redux Toolkit, MaterialUI, Styled Components, JavaScript, Node.js, HTML, CSS, Git, Docker, Jenkins, Scrum",
   },
   {
     id: 2,
-    company: "Company 2",
-    companyColor: "bg-clip-text bg-gradient-to-r from-[#3380BF] to-[#0061af]",
-    activities: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nibh non ex dapibus posuere. Duis in dui massa. Phasellus ac tortor sapien. Duis nec vestibulum justo. Morbi elementum arcu sapien, sed semper diam rhoncus vitae. Maecenas nec mauris tempor urna congue finibus vel eget tellus. Phasellus quis dolor ante.",
-    skillsUsed: "React.js, TypeScript, Node.js, C#, SQL, NHibernate, JavaScript, Git, Azure, Scrum, HTML, CSS",
+    role: "Full Stack Developer",
+    company: "GAtec",
+    workTime: "February 2019 - September 2022",
+    activities: [
+      "Delivered full stack features both new and old rewrote from legacy software for the Commerce Solution.",
+      "Delivered new features and managed the report system in the Genetic Enhancement Module developed in partnership with UFSCAR.",
+      "Delivered quick and precise solutions for issues to the SimpleFarm and SimpleViewer Solutions.",
+    ],
+    skillsUsed:
+      "JavaScript, Node.js, HTML, CSS, ASP.NET Razor, C# .NET, Unit Tests, Entity Framework, NHibernate, MySQL, PL/SQL, Git, Azure DevOps, Scrum",
   },
-  // {
-  //   id: 3,
-  //   company: "Company 3",
-  //   companyColor: "text-[#00af00]",
-  //   activities: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nibh non ex dapibus posuere. Duis in dui massa. Phasellus ac tortor sapien. Duis nec vestibulum justo. Morbi elementum arcu sapien, sed semper diam rhoncus vitae. Maecenas nec mauris tempor urna congue finibus vel eget tellus. Phasellus quis dolor ante. Sed quam orci, blandit eu rutrum at, vestibulum ac augue. Nam hendrerit faucibus est, at dictum nunc tincidunt lacinia.",
-  //   skillsUsed: "React.js, TypeScript, Node.js, C#, SQL, NHibernate, JavaScript, Git, Azure, Scrum, HTML, CSS",
-  // },
 ];

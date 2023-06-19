@@ -9,13 +9,25 @@ const Projects: NextPage = () => {
       <h1 className="items-center text-7xl font-extrabold tracking-tight text-slate-50">
         Projects
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        {projects.map((project, index) => {
+      <div className="grid grid-cols-1 justify-items-stretch md:grid-cols-2">
+        {projects.map(({ image, name }, index) => {
           return (
-            <div key={index}>
+            <div key={index} className="">
               <Card>
-                <div>teste</div>
-                {project.name}
+                <figure>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={image}
+                    alt={name}
+                    width={500}
+                    className="easy-in-out rounded-t-md p-5 duration-500 hover:rotate-[720deg]"
+                  />
+                  <fieldset className="p-2">
+                    <legend>{name}</legend>
+                    <blockquote>teste</blockquote>
+                    <blockquote>teste</blockquote>
+                  </fieldset>
+                </figure>
               </Card>
             </div>
           );

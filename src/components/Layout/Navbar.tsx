@@ -46,7 +46,7 @@ const MobileNavBar = ({
           />
           <span
             className={`h-1 w-full rounded-lg bg-sky-50 transition-all duration-700 ease-in-out ${
-              open ? "rotate-[405deg]" : ""
+              open ? "rotate-[405deg] bg-transparent" : ""
             }`}
           />
           <span
@@ -64,7 +64,7 @@ const MobileNavBar = ({
           onClick={() => setOpen(!open)}
         />
         <div
-          className={`fixed left-0 top-0 z-30 h-full w-3/5 transform bg-shaman-700 ${
+          className={`fixed left-0 top-0 z-30 h-full w-[70%] transform bg-shaman-700 ${
             open ? "-translate-x-0 " : "-translate-x-full "
           } transition-transform duration-300 ease-in-out`}
         >
@@ -75,7 +75,7 @@ const MobileNavBar = ({
                   <Link
                     key={name}
                     href={path}
-                    className="py-3 hover:bg-sky-50 hover:text-[#04acf4]"
+                    className="overflow-hidden py-3 hover:bg-sky-50 hover:text-[#04acf4]"
                     onClick={() => setOpen(!open)}
                   >
                     {name}

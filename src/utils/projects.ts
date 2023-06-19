@@ -22,37 +22,5 @@ export const projects = [
     link: "www.google.com",
     github: "www.github.com",
     description: "This very website you're in right now",
-  },
-  {
-    id: 4,
-    name: "Portfolio v4",
-    image: "/img/thunder.svg",
-    link: "www.google.com",
-    github: "www.github.com",
-    description: "This is a placeholder",
-  },
-  {
-    id: 5,
-    name: "Portfolio v5",
-    image: "/img/thunder.svg",
-    link: "www.google.com",
-    github: "www.github.com",
-    description: "This very website you're in right now",
-  },
-  {
-    id: 6,
-    name: "Portfolio v6",
-    image: "/img/thunder.svg",
-    link: "www.google.com",
-    github: "www.github.com",
-    description: "This is a placeholder",
-  },
-  {
-    id: 7,
-    name: "Portfolio v7",
-    image: "/img/thunder.svg",
-    link: "www.google.com",
-    github: "www.github.com",
-    description: "This very website you're in right now",
   }
 ];
