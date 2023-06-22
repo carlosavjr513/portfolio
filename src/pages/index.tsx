@@ -11,9 +11,9 @@ const Home: NextPage = () => {
       </h1>
       <div className="grid grid-cols-1">
         <Card>
-          <div className="p-5 max-w-xs">
+          <div className="p-3">
             <h3 className="font-semibold tracking-wider text-shaman-800">
-              I&#39;m a Software Developer, and<br />I like storms and creating stuff.
+              I&#39;m a Software Developer, I like storms and creating stuff.
             </h3>
           </div>
         </Card>

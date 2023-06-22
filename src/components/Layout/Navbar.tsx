@@ -2,7 +2,7 @@ import classNames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, type Dispatch, type SetStateAction } from "react";
-import Lightning from "../Assets/Lightning";
+import SvgIcon from "../SvgIcon";
 
 const navItems = [
   {
@@ -96,7 +96,8 @@ const DesktopNavBar = () => {
     <div className="m-4 flex w-screen items-center justify-center space-x-10">
       <div className="flex-shrink-0">
         <Link href="/">
-          <Lightning
+          <SvgIcon
+            name="thunder"
             size={50}
             className="p-2 text-sky-50 hover:rounded-full hover:bg-white hover:text-[#04acf4]"
           />
