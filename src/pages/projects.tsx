@@ -14,9 +14,9 @@ const Projects: NextPage = () => {
         {projects.map(({ name, description, url, gitHub }, index) => {
           return (
             <div key={index}>
-              <Card>
-                <div className="flex min-h-[16rem] flex-col divide-y-[1px] divide-maelstrom-300 p-2">
-                  <p className="text-center font-semibold">{name}</p>
+              <Card className="px-2 py-4">
+                <div className="flex flex-col divide-y-[1px] divide-maelstrom-300">
+                  <p className="pb-2 text-center font-semibold">{name}</p>
                   <p className="min-h-[7rem] py-3 text-justify">
                     <span className="ml-5">{description}</span>
                   </p>
@@ -32,7 +32,7 @@ const Projects: NextPage = () => {
                       )}
                     </div>
                     <div className="inline-flex items-center gap-2">
-                      <FaGithub size={30} className="text-fuchsia-700" />
+                      <FaGithub size={30} className="text-purple-600" />
                       {gitHub ? (
                         <a href={gitHub} className="text-blue-600 underline">
                           Check the repository

@@ -20,29 +20,27 @@ const JobCard = ({
   skillsUsed,
 }: Omit<jobProps, "id">) => {
   return (
-    <Card>
-      <div className="py-2">
-        <div className="m-3 divide-y divide-maelstrom-300 p-2 text-maelstrom-800">
-          <p className="flex justify-between text-xl font-bold">
-            <span>{company}</span>
-            <span className="text-sm font-normal text-slate-700">
-              {workTime}
-            </span>
+    <Card className="py-2">
+      <div className="divide-y divide-maelstrom-300 p-5 text-maelstrom-800">
+        <p className="flex justify-between text-xl font-bold">
+          <span>{company}</span>
+          <span className="text-sm font-normal text-slate-700">{workTime}</span>
+        </p>
+        <div className="pt-2">
+          <p className="font-semibold">{role}</p>
+          {activities.map((activity, index) => {
+            return (
+              <p key={index} className="text-justify">
+                <span className="ml-5">{`- ${activity}`}</span>
+              </p>
+            );
+          })}
+        </div>
+        <div className="my-3">
+          <p className="font-semibold">Skills Used</p>
+          <p>
+            <span className="ml-5">{`- ${skillsUsed}`}</span>
           </p>
-          <div className="pt-2">
-            <p className="font-semibold">{role}</p>
-            {activities.map((activity, index) => {
-              return (
-                <p key={index} className="text-justify">
-                  <span className="ml-5">{`- ${activity}`}</span>
-                </p>
-              );
-            })}
-          </div>
-          <div className="my-3">
-            <p className="font-semibold">Skills Used</p>
-            <p className="ml-5">{`- ${skillsUsed}`}</p>
-          </div>
         </div>
       </div>
     </Card>
