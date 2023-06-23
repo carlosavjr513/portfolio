@@ -19,8 +19,8 @@ const About: NextPage = () => {
           <span className="ml-1">
             Another thing I like is to create things, which started with
             drawings when I was a kid and yes, storms were in the background of
-            them. It didn&apos;t take long for me to like video games and from
-            there expanding into passion for computers as well.
+            them. It didn&apos;t take long for me to like video games and also
+            computers as well.
           </span>
         </p>
         <p>
@@ -40,9 +40,10 @@ const About: NextPage = () => {
             than I have been working with software development.
           </span>
           <span className="ml-1">
-            And in the last few years I have been able to work with waht I like the
-            most: Front-end. After all, that was my idea at the start, to create
-            things in a way that I like what I see.
+            And in the last few years I have been able to work with what I like
+            the most: Front-end. After all, that was my childhood passion, to
+            create things in a way that I like what I see and if possible with
+            storms in it.
           </span>
         </p>
         <p>
