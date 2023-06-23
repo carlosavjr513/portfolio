@@ -17,22 +17,30 @@ const Projects: NextPage = () => {
               <Card>
                 <div className="flex min-h-[16rem] flex-col divide-y-[1px] divide-maelstrom-300 p-2">
                   <p className="text-center font-semibold">{name}</p>
-                  <p className="min-h-[7rem] py-5">{description}</p>
+                  <p className="min-h-[7rem] py-3 text-justify">
+                    <span className="ml-5">{description}</span>
+                  </p>
                   <div className="flex flex-col pt-5">
-                    <p className="inline-flex items-center gap-2">
+                    <div className="inline-flex items-center gap-2">
                       <FaLink size={30} className="text-shaman-500" />
-                      {/* prettier-ignore */}
-                      <a href={url ?? "/underConstruction"} className="text-blue-600 underline">
-                        Check the project
-                      </a>
-                    </p>
-                    <p className="inline-flex items-center gap-2">
+                      {url ? (
+                        <a href={url} className="text-blue-600 underline">
+                          Check the project
+                        </a>
+                      ) : (
+                        <p>Check the project</p>
+                      )}
+                    </div>
+                    <div className="inline-flex items-center gap-2">
                       <FaGithub size={30} className="text-fuchsia-700" />
-                      {/* prettier-ignore */}
-                      <a href={gitHub ?? "/underConstruction"} className="text-blue-600 underline">
-                        Check the repository
-                      </a>
-                    </p>
+                      {gitHub ? (
+                        <a href={gitHub} className="text-blue-600 underline">
+                          Check the repository
+                        </a>
+                      ) : (
+                        <p>Check the repository</p>
+                      )}
+                    </div>
                   </div>
                 </div>
               </Card>
