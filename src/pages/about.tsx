@@ -11,12 +11,13 @@ const About: NextPage = () => {
       <Card className="max-w-4xl p-4 text-justify text-maelstrom-700">
         <p>
           <span className="ml-5">
-            As I stated before i like storms, maybe It&apos;s because I&apos;m
-            from Brazil the country that is most hit by lightning bolts in the
-            entire planet an average of 70 million per year.
+            Let me tell a litle bit about me, first of all: I like storms, maybe
+            It&apos;s because I&apos;m from Brazil the country that is most hit
+            by lightning bolts in the entire planet an average of 70 million per
+            year.
           </span>
           <span className="ml-1">
-            And also as said i like to create things, which started with
+            Another thing I like is to create things, which started with
             drawings when I was a kid and yes, storms were in the background of
             them. It didn&apos;t take long for me to like video games and from
             there expanding into passion for computers as well.
@@ -35,14 +36,13 @@ const About: NextPage = () => {
         </p>
         <p>
           <span className="ml-5">
-            After that I enrolled into an IT course and since than I have been
-            working with software development.
+            A couple fo years after that I enrolled into an IT course and since
+            than I have been working with software development.
           </span>
           <span className="ml-1">
-            At first I had to learn it all but in the last few years I have been
-            able to work with I like the most: Front-end. After all, that was my
-            idea way at the start even though I didn&apos;t knew exactly what it
-            was.
+            And it the last few years I have been able to work with I like the
+            most: Front-end. After all, that was my idea at the start, to create
+            things in a way that I like what I see.
           </span>
         </p>
         <p>
