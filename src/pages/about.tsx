@@ -36,11 +36,11 @@ const About: NextPage = () => {
         </p>
         <p>
           <span className="ml-5">
-            A couple fo years after that I enrolled into an IT course and since
+            A couple of years after that I enrolled into an IT course and since
             than I have been working with software development.
           </span>
           <span className="ml-1">
-            And it the last few years I have been able to work with I like the
+            And in the last few years I have been able to work with waht I like the
             most: Front-end. After all, that was my idea at the start, to create
             things in a way that I like what I see.
           </span>
