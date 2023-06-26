@@ -3,7 +3,7 @@
 This is my Portfolio Project to tell a little bit about me and my experiences.
 
 This project was created with the [T3 Stack](https://create.t3.gg/) 
-and the [classNames](https://www.npmjs.com/package/classnames) and [react-icons](https://react-icons.github.io/react-icons/) packages, the idea was to build my own components as I needed
+and the [classNames](https://github.com/JedWatson/classnames) and [react-icons](https://react-icons.github.io/react-icons/) packages, the idea was to build my own components as I needed
 
 # Online Version
 
