@@ -18,32 +18,33 @@ const About: NextPage = () => {
           </span>
           <span className="ml-1">
             Another thing I like is to create things, which started with
-            drawings when I was a kid and yes, storms were in the background of
-            them. It didn&apos;t take long for me to like video games and also
-            computers as well.
+            drawings when I was a kid. It didn&apos;t take long for me to like
+            video games and also computers as well.
           </span>
         </p>
         <p>
           <span className="ml-5">
             While I was gaming I always had the most interest in the ones that
-            allowed me to customize my own character or HUD. Which eventually
-            led me to games that with macros that allowed me to control the
-            behavior of certain things in my interface and addons that made it
-            possible to create my very own interface. At the same time I was
-            finishing my engineer major where I had my first contact with
-            programming, and there I was hooked.
+            gave me more freedom of customization. Which eventually led me to
+            games that with macros that allowed me to control the behavior of
+            certain things in my interface and addons that made it possible to
+            create my very own interface.
+          </span>
+          <span className="ml-1">
+            At the same time I was finishing my engineer major where I had my
+            first contact with programming, and that&apos;s when i found out
+            what I liked.
           </span>
         </p>
         <p>
           <span className="ml-5">
-            A couple of years after that I enrolled into an IT course and since
-            than I have been working with software development.
+            After that I enrolled into an IT course, and I have been working
+            with software development ever since.
           </span>
           <span className="ml-1">
             And in the last few years I have been able to work with what I like
-            the most: Front-end. After all, that was my childhood passion, to
-            create things in a way that I like what I see and if possible with
-            storms in it.
+            the most: Front-end. After all, that&apos;s what I liked the most,
+            to create things in a way that I like what I see and.
           </span>
         </p>
         <p>
