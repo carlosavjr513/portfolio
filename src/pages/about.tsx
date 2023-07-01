@@ -43,8 +43,7 @@ const About: NextPage = () => {
           </span>
           <span className="ml-1">
             And in the last few years I have been able to work with what I like
-            the most: Front-end. After all, that&apos;s what I liked the most,
-            to create things in a way that I like what I see and.
+            the most: Front-end.
           </span>
         </p>
         <p>
