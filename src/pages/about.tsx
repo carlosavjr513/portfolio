@@ -11,7 +11,7 @@ const About: NextPage = () => {
       <Card className="max-w-4xl p-4 text-justify text-maelstrom-700">
         <p>
           <span className="ml-5">
-            Let me tell a litle bit about me, first of all: I like storms, maybe
+            Let me tell a little bit about me, first of all: I like storms, maybe
             It&apos;s because I&apos;m from Brazil the country that is most hit
             by lightning bolts in the entire planet an average of 70 million per
             year.
