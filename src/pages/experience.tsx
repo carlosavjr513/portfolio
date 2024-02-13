@@ -12,6 +12,8 @@ interface jobProps {
   skillsUsed: string;
 }
 
+const orderedJobs = jobs.sort((a, b) => b.id - a.id);
+
 const JobCard = ({
   role,
   company,
@@ -54,7 +56,7 @@ const About: NextPage = () => {
         Experience
       </h1>
       <div className="grid grid-cols-1">
-        {jobs.map(({ id, role, company, workTime, activities, skillsUsed }) => {
+        {orderedJobs.map(({ id, role, company, workTime, activities, skillsUsed }) => {
           return (
             <JobCard
               key={id}
