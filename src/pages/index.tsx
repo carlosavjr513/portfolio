@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <Card>
           <div className="p-3">
             <h3 className="font-semibold tracking-wider text-shaman-800">
-              I&apos;m a Software Developer, I like storms and creating stuff.
+              I&apos;m a FullStack Software Developer with focus in Frontend and I love creating stuff.
             </h3>
           </div>
         </Card>

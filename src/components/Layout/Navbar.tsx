@@ -6,10 +6,6 @@ import SvgIcon from "../SvgIcon";
 
 const navItems = [
   {
-    path: "/about",
-    name: "About",
-  },
-  {
     path: "/experience",
     name: "Experience",
   },
