@@ -25,20 +25,20 @@ const Projects: NextPage = () => {
                       <FaLink size={30} className="text-shaman-500" />
                       {url ? (
                         <a href={url} className="text-blue-600 underline">
-                          Check the project
+                          Project
                         </a>
                       ) : (
-                        <p>Check the project</p>
+                        <p>Project</p>
                       )}
                     </div>
                     <div className="inline-flex items-center gap-2">
                       <FaGithub size={30} className="text-purple-600" />
                       {gitHub ? (
                         <a href={gitHub} className="text-blue-600 underline">
-                          Check the repository
+                          Repository
                         </a>
                       ) : (
-                        <p>Check the repository</p>
+                        <p>Repository</p>
                       )}
                     </div>
                   </div>
