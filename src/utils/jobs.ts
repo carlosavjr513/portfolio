@@ -29,7 +29,7 @@ export const jobs = [
     id: 3,
     role: "Full Stack Developer",
     company: "GAtec",
-    workTime: "August 2023 - Currently",
+    workTime: "August 2023 - May 2024",
     activities: [
       "Delivered solutions for issues to the SimpleFarm Solution an ERP system focused on Agribusiness.",
       "Delivered solutions for issues to the SimpleViewer Solution a customizable Dashboards for users with different levels of access.",
