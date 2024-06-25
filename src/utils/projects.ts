@@ -9,7 +9,14 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Project 2",
+    name: "On The Go Code Test",
+    description: "This is a technical challenge I did for a senior frontend developer position at On The Go. I had to use the following stack as instructed: NextJS, MaterialUI, axios and react-hook-form",
+    url: "https://on-the-go-test.vercel.app/",
+    gitHub: "https://github.com/carlosavjr513/on-the-go-test",
+  },
+  {
+    id: 3,
+    name: "Project 3",
     description: "Coming Soon...",
     url: null,
     gitHub: null,
