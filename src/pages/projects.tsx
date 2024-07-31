@@ -22,23 +22,23 @@ const Projects: NextPage = () => {
                   </p>
                   <div className="flex flex-col pt-5">
                     <div className="inline-flex items-center gap-2">
-                      <FaLink size={30} className="text-shaman-500" />
-                      {url ? (
-                        <a href={url} className="text-blue-600 underline">
-                          Project
-                        </a>
-                      ) : (
-                        <p>Project</p>
+                      {url && (
+                        <>
+                          <FaLink size={30} className="text-shaman-500" />
+                          <a href={url} className="text-blue-600 underline">
+                            Project
+                          </a>
+                        </>
                       )}
                     </div>
                     <div className="inline-flex items-center gap-2">
-                      <FaGithub size={30} className="text-purple-600" />
-                      {gitHub ? (
-                        <a href={gitHub} className="text-blue-600 underline">
-                          Repository
-                        </a>
-                      ) : (
-                        <p>Repository</p>
+                      {gitHub && (
+                        <>
+                          <FaGithub size={30} className="text-purple-600" />
+                          <a href={gitHub} className="text-blue-600 underline">
+                            Repository
+                          </a>
+                        </>
                       )}
                     </div>
                   </div>
