@@ -11,7 +11,7 @@ export const jobs = [
       "Delivered solutions for issues to the SimpleViewer Solution a customizable Dashboards for users with different levels of access."
     ],
     skillsUsed:
-      "JavaScript, Node.js, HTML, CSS, ASP.NET Razor, C# .NET, Unit Tests, Entity Framework, NHibernate, MySQL, PL/SQL, Git, Azure DevOps, Scrum",
+      "JavaScript, Node, HTML, CSS, ASP.NET Razor, C# .NET, Unit Tests, Entity Framework, NHibernate, MySQL, PL/SQL, Git, Azure DevOps, Scrum",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const jobs = [
       "Delivered and maintained the front-end for a marketplace project."
     ],
     skillsUsed:
-      "React.js, TypeScript, Redux Toolkit, MaterialUI, Styled Components, JavaScript, Node.js, HTML, CSS, Git, Docker, Jenkins, Scrum",
+      "React, TypeScript, Redux Toolkit, MaterialUI, Styled Components, JavaScript, Node, HTML, CSS, Git, Docker, Jenkins, Scrum",
   },
   {
     id: 3,
@@ -35,6 +35,17 @@ export const jobs = [
       "Delivered solutions for issues to the SimpleViewer Solution a customizable Dashboards for users with different levels of access.",
     ],
     skillsUsed:
-      "JavaScript, Node.js, HTML, CSS, ASP.NET Razor, C# .NET, Unit Tests, Entity Framework, NHibernate, MySQL, PL/SQL, Git, Azure DevOps, Scrum",
+      "JavaScript, Node, HTML, CSS, ASP.NET Razor, C# .NET, Unit Tests, Entity Framework, NHibernate, MySQL, PL/SQL, Git, Azure DevOps, Scrum",
+  },
+  {
+    id: 4,
+    role: "Full Stack Developer",
+    company: "Radix",
+    workTime: "August 2024 - Currently",
+    activities: [
+      "",
+    ],
+    skillsUsed:
+      "React, Typescript, JavaScript, Node, Angular, Cognite, HTML, CSS, C# .NET, Git, Azure DevOps, Scrum",
   },
 ];
